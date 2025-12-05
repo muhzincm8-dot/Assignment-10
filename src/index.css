@@ -1,0 +1,123 @@
+@import "tailwindcss";
+
+
+
+/* Basic Reset and Footer Styling */
+.footer {
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
+    padding: 40px 20px 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Container for the main content (links, contact) */
+.footer-container {
+    display: flex;
+    justify-content: space-around; /* Distribute space evenly */
+    flex-wrap: wrap; /* Allows sections to wrap on smaller screens */
+    max-width: 1200px;
+    margin: 0 auto 30px; /* Center container and add bottom margin */
+    border-bottom: 1px solid #555; /* Separator line */
+    padding-bottom: 20px;
+}
+
+/* Styling for individual footer sections */
+.footer-section {
+    flex: 1; /* Each section takes equal space */
+    min-width: 200px; /* Minimum width for wrapping */
+    margin: 10px 20px;
+}
+
+.footer-section h3 {
+    color: #f0f0f0;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: #ccc; /* Lighter link color */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section a:hover {
+    color: #fff; /* White on hover */
+}
+
+/* Social and Contact Styling */
+.social-links a {
+    margin-right: 15px;
+    font-weight: bold; /* Example: to stand out */
+}
+
+/* Copyright and Bottom Bar */
+.footer-bottom {
+    text-align: center;
+    padding-top: 15px;
+    font-size: 0.9em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.payment-icons span {
+    margin-left: 15px;
+    /* In a real app, you'd replace these spans with actual payment icon SVGs/images */
+    border: 1px solid #ccc;
+    padding: 3px 6px;
+    border-radius: 3px;
+}
+
+/* Responsive adjustment for smaller screens */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Stacks sections vertically */
+    }
+
+    .footer-section {
+        margin-bottom: 30px;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+    }
+    
+    .payment-icons {
+        margin-top: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Style for screens below medium size (e.g., less than 768px) */
+@media screen and (max-width: 1100px) {
+  .nav {
+    display: none;
+   
+  }
+}
+
+/* Style for screens below medium size (e.g., less than 768px) */
+@media screen and (max-width: 800px) {
+  .nav-1 {
+    display: none;
+    width: 50%;
+  }
+}
